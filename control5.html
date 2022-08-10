@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -88,10 +88,10 @@ let result = array[0]?.toUpperCase()
 <script type="application/javascript">
     const runScript = () => {
 
-        let element = document.getElementsByClassName("pineapple").item(-1);
+        let element = document.getElementsByClassName("pineapple").item(0);
         element?.remove()
 
-        if (document.getElementsByClassName("pineapple") <= 0) {
+        if (document.getElementsByClassName("pineapple").length >= 0) {
             document.getElementsByClassName("pineapple").item(0)?.remove()
         } else {
             let banana = document.createElement('span');
@@ -100,7 +100,7 @@ let result = array[0]?.toUpperCase()
         }
 
         element = document.getElementsByClassName("pineapple").item(0);
-        if (element?.textContent === "🍅") element.remove()
+        if (element?.textContent !== "🍅") element.remove()
 
 
 
